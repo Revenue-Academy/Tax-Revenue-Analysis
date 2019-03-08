@@ -1,6 +1,6 @@
 clear all
 
-cd "C:\Users\wb305167\OneDrive - WBG\Research"
+*cd "C:\Users\wb305167\OneDrive - WBG\Research"
 
 use "Government Revenue Dataset - augmented", clear
 sort Country_Code year
