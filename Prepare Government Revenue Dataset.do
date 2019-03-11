@@ -1,6 +1,6 @@
 clear all
 set more off
-*cd "C:\Users\wb305167\OneDrive - WBG\Research
+cd "C:\Users\wb305167\OneDrive - WBG\Research
 
 import excel "Trade in percentage of GDP.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
@@ -22,6 +22,14 @@ save country_code, replace
 import excel CPIA.xls, sheet("Sheet1") firstrow clear
 sort Country_Code
 save IDA_countries, replace
+
+import excel "Agriculture value added WDI Oct 2017 - percent of GDP.xls", sheet("Sheet1") firstrow clear
+sort Country_Code year
+save "Agriculture value added WDI Oct 2017 - percent of GDP", replace
+
+import excel "Polity Dataset Democracy.xls", sheet("Sheet1") firstrow clear
+sort Country_Code year
+save "Polity Dataset Democracy", replace
 
 ***
 *use "CPIA Nov 2018", clear
@@ -110,7 +118,7 @@ label var ln_GDP_PC2 "Log of GDP Per Capita Squared"
 
 *use "Trade in percentage of GDP- Nov 2018", clear
 *including trade
-merge 1:m Country_Code year using "Trade in percentage of GDP"
+merge 1:m Country_Code year using "Trade in percentage of GDP- Nov 2018"
 drop if _merge !=3
 drop _merge
 *save "Trade in percentage of GDP", replace

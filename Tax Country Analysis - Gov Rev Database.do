@@ -1,6 +1,6 @@
 clear all
 
-*cd "C:\Users\wb305167\OneDrive - WBG\Research"
+cd "C:\Users\wb305167\OneDrive - WBG\Research"
 
 use "Government Revenue Dataset - augmented", clear
 sort Country_Code year
@@ -20,19 +20,19 @@ local w="Argentina"
 local x="LAC"
 local a = "BRA"
 local a1 = "Brazil"
-local b = "CHL"
-local b1 = "Chile"
-local c = "PER"
-local c1 = "Peru"
-local d = "COL"
-local d1 = "Colombia"
+local b = "PER"
+local b1 = "Peru"
+local c = "COL"
+local c1 = "Colombia"
+local d = "CHL"
+local d1 = "Chile"
 
-graph bar Income_Taxes Property_Tax Value_Added_Tax Excise_Taxes Trade_Taxes Social_Contributions Other_Taxes if Country_Code=="`v'", over(year, relabel(1 "1990" 2 " " 3 " " 4 " " 5 " " 6 "1995" 7 " " 8 " " 9 " " 10 " " 11 "2000" 12 " " 13 " " 14 " " 15 " " 16 "2005" 17 " " 18 " " 19 " " 20 " " 21 "2010" 22 " " 23 " " 24 " " 25 " " 26 " " 27 "2016" 28 " ")) legend(label(1 "Income Taxes")  label(2 "Property Tax") label(3 "VAT") label(4 "Excise Taxes") label(5 "Taxes on Intl. Trade") label(6 "Social Contributions") label(7 "Other Taxes")) ylabel(5(5)35) ytitle("% of GDP") title("`w': Tax Structure") stack
+graph bar Income_Taxes Property_Tax Value_Added_Tax Excise_Taxes Trade_Taxes Social_Contributions Other_Taxes if Country_Code=="`v'", over(year, relabel(1 "1990" 2 " " 3 " " 4 " " 5 " " 6 "1995" 7 " " 8 " " 9 " " 10 " " 11 "2000" 12 " " 13 " " 14 " " 15 " " 16 "2005" 17 " " 18 " " 19 " " 20 " " 21 "2010" 22 " " 23 " " 24 " " 25 " " 26 " " 27 "2016" 28 " ")) legend(label(1 "Income Taxes")  label(2 "Property Tax") label(3 "VAT") label(4 "Excise Taxes") label(5 "Taxes on Intl. Trade") label(6 "Social Contributions") label(7 "Other Taxes")) ytitle("% of GDP") title("`w': Tax Structure") stack
 graph save "`w' Tax Structure over Time", replace  
 graph export "`w' Tax Structure over Time.png", replace
 
 
-graph bar Tax_Revenue Social_Contributions if Country_Code=="`v'", over(year, relabel(1 "1990" 2 " " 3 " " 4 " " 5 " " 6 "1995" 7 " " 8 " " 9 " " 10 " " 11 "2000" 12 " " 13 " " 14 " " 15 " " 16 "2005" 17 " " 18 " " 19 " " 20 " " 21 "2010" 22 " " 23 " " 24 " " 25 " " 26 " " 27 "2016")) legend(label(1 "Tax Revenue") label(2 "Social Contributions")) ylabel(5(5)35) ytitle("% of GDP") title("`w': Tax Revenue and Social Contributions") stack
+graph bar Tax_Revenue Social_Contributions if Country_Code=="`v'", over(year, relabel(1 "1990" 2 " " 3 " " 4 " " 5 " " 6 "1995" 7 " " 8 " " 9 " " 10 " " 11 "2000" 12 " " 13 " " 14 " " 15 " " 16 "2005" 17 " " 18 " " 19 " " 20 " " 21 "2010" 22 " " 23 " " 24 " " 25 " " 26 " " 27 "2016")) legend(label(1 "Tax Revenue") label(2 "Social Contributions"))  ytitle("% of GDP") title("`w': Tax Revenue and Social Contributions") stack
 graph save "`w' Tax Revenue and Social Contributions", replace  
 graph export "`w' Tax Revenue and Social Contributions.png", replace
 
@@ -66,7 +66,7 @@ graph save "`w' Tax Revenue and Social Contributions vs Regions", replace
 graph export "`w' Tax Revenue and Social Contributions vs Regions.png", replace
 
 sort Oil_Gas_Rich1 year
-sepscatter meantax5 year if year<=2016, separate(Oil_Gas_Rich1) recast(connect) missing legend (lab(1 "NOT - Oil & Gas Rich") lab(2 "Oil & Gas Rich")) ylabel(15(5)35) title("Total Revenue Collection - Oil Gas Rich vs. Others")
+sepscatter meantax5 year if year<=2016, separate(Oil_Gas_Rich1) recast(connect) missing legend (lab(1 "NOT - Oil & Gas Rich") lab(2 "Oil & Gas Rich")) title("Total Revenue Collection - Oil Gas Rich vs. Others")
 graph save "`w' Total Revenue Oil versus Non-Oil", replace  
 graph export "`w' Total Revenue Oil versus Non-Oil.png", replace
 
@@ -101,13 +101,13 @@ graph save "World - Performance of Different Taxes", replace
 graph export "World - Performance of Different Taxes.png", replace
 
 *CIT 
-twoway (connected meantaxcorp year if year<=2016 , msymbol(O) ylabel(0(1.0)5.0) ytitle("% of GDP") title("World: CIT collection over time"))
+twoway (connected meantaxcorp year if year<=2016 , msymbol(O) ytitle("% of GDP") title("World: CIT collection over time"))
 graph save "World - Performance of Corporate Income Tax", replace  
 graph export "World - Performance of Corporate Income Tax.png", replace
 
 *Country versus Region
 sort Region_Code1 year
-twoway (connected meantax3 year if year<=2016 & Region_Code1=="`x'", msymbol(Oh))(connected Tax_Revenue year if year<=2016 & Country_Code=="`v'"), legend(lab(1 "`x': Tax Revenue and SC") lab(2 "`w': Tax Revenue and SC")) ylabel(8(2)30) ytitle("% of GDP") title("`w' vs. `x' - Comparing Tax Collection")
+twoway (connected meantax3 year if year<=2016 & Region_Code1=="`x'", msymbol(Oh))(connected Tax_Revenue year if year<=2016 & Country_Code=="`v'"), legend(lab(1 "`x': Tax Revenue and SC") lab(2 "`w': Tax Revenue and SC")) ytitle("% of GDP") title("`w' vs. `x' - Comparing Tax Collection")
 graph save "`w' vs. `x' - Tax Revenue incl. Social Contributions", replace  
 graph export "`w' vs. `x' - Tax Revenue incl. Social Contributions.png", replace
 
@@ -127,7 +127,7 @@ sort Region_Code2 year
 
 twoway (connected Tax_Revenue_incl_SC year if Country_Code=="`v'", msymbol(O) ///
 legend(label(1 "`w'") label(2 "`a1'") label(3 "`b1'") label(4 "`c1'") ///
-label(5 "`d1'")) ylabel(5(5)40, format(%5.0f)) ytitle("% of GDP") ///
+label(5 "`d1'")) ytitle("% of GDP") ///
 title("`v' versus neighbours: Tax Revenue over time")) ///
 (connected Tax_Revenue_incl_SC year if Country_Code=="`a'", msymbol(Oh)) ///
 (connected Tax_Revenue_incl_SC year if Country_Code=="`b'", msymbol(S)) ///
@@ -185,13 +185,13 @@ graph export "`w' Trade Taxes Revenue as compared with its Per Capita Income.png
 
 
 *importing agriculture dataset see reshape data do file
-
 merge 1:m Country_Code year using "Agriculture value added WDI Oct 2017 - percent of GDP"
 drop if _merge !=3
 drop _merge
 
 *drop if Country_Code=="LSO"
 twoway (scatter Tax_Revenue agri_share if year==2016 & Country_Code!="DNK", mlabsize(vsmall) mlabel(Country_Code)) (scatter Tax_Revenue agri_share if year==2016 & Country_Code=="`v'", mcolor(red)) (qfit Tax_Revenue agri_share if year==2016), graphregion(color(white)) bgcolor(white) ylabel(, nogrid) ytitle("Tax Revenues (% of GDP), 2016") xtitle("Agriculture Value Added (% of GDP), 2016") title("Level of Income and Tax Revenues") legend(off)
+
 
 merge 1:m Country_Code year using "Polity Dataset Democracy"
 drop if _merge !=3
@@ -422,7 +422,7 @@ label var Tax_Gap "Tax Gap (% of GDP)"
 
 sort Country_Code year
 
-twoway (line Tax_Capacity  year if Country_Code=="`v'") (connected Tax_Revenue_incl_SC  year if Country_Code=="`v'"), legend(lab(1 "Tax Capacity") lab(2 "Tax Revenue incl. SC")) ylabel(5(5)40) ytitle("% of GDP") title("`w': Tax Capacity and Performance")
+twoway (line Tax_Capacity  year if Country_Code=="`v'") (connected Tax_Revenue_incl_SC  year if Country_Code=="`v'"), legend(lab(1 "Tax Capacity") lab(2 "Tax Revenue incl. SC")) ytitle("% of GDP") title("`w': Tax Capacity and Performance")
 graph save "`w' Tax Capacity", replace  
 graph export "`w' Tax Capacity.png", replace
 
@@ -435,4 +435,6 @@ graph save "`w' Tax Gap", replace
 graph export "`w' Tax Gap.png", replace
 
 list Country_Code year Tax_Capacity Tax_Revenue_incl_SC Tax_Gap if Country_Code=="`v'"
+
+*save "Government Revenue Dataset - augmented_full", replace
 
