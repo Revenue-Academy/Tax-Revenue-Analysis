@@ -1,6 +1,6 @@
 clear all
 set more off
-cd "C:\Users\wb305167\OneDrive - WBG\Research
+*cd "C:\Users\wb305167\OneDrive - WBG\Research
 
 import excel "Trade in percentage of GDP.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
@@ -118,7 +118,7 @@ label var ln_GDP_PC2 "Log of GDP Per Capita Squared"
 
 *use "Trade in percentage of GDP- Nov 2018", clear
 *including trade
-merge 1:m Country_Code year using "Trade in percentage of GDP- Nov 2018"
+merge 1:m Country_Code year using "Trade in percentage of GDP"
 drop if _merge !=3
 drop _merge
 *save "Trade in percentage of GDP", replace
