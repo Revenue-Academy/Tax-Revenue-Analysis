@@ -1,6 +1,6 @@
 clear all
 set more off
-*cd "C:\Users\wb305167\OneDrive - WBG\Research
+cd "C:\Users\wb305167\OneDrive - WBG\Research
 
 import excel "Trade in percentage of GDP.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
@@ -10,11 +10,15 @@ import excel "GDP Constant 2010 USD.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
 save "GDP Constant 2010 USD", replace
 
+import excel "GDP Constant 2010 USD.xls", sheet("Sheet1") firstrow clear
+sort Country_Code year
+save "GDP Constant 2010 USD", replace
+
 import excel "GDP Per Capita Constant USD.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
 save "GDP Per Capita Constant USD", replace
 
-import excel country_code.xls, sheet("country_code") firstrow clear
+import excel country_code_updated.xls, sheet("country_code") firstrow clear
 rename Country countryname
 sort Country_Code
 save country_code, replace
@@ -135,11 +139,11 @@ replace oil_gas_dum=0 if Oil_Gas_Rich=="NO"
 
 
 *identifying outliers
-foreach u in Total_Revenue_incl_SC Tax_Revenue_incl_SC Tax_Revenue Income_Taxes Value_Added_Tax Excise_Taxes Trade_Taxes { 
+foreach u in Total_Revenue_incl_SC Tax_Revenue_incl_SC Tax_Revenue PIT Income_Taxes Value_Added_Tax Excise_Taxes Trade_Taxes { 
 egen `u'_99 = pctile(`u'), p(99)
 egen `u'_01 = pctile(`u'), p(1)
 }
 
-save "Government Revenue Dataset - augmented", replace
-export excel using "Government-Revenue-Dataset-augmented.xlsx", firstrow(variables) replace
+save "Government Revenue Dataset-augmented", replace
+export excel using "Government Revenue Dataset-augmented.xlsx", firstrow(variables) replace
 export delimited using "Government Revenue Dataset-augmented.csv", replace
