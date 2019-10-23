@@ -1,6 +1,10 @@
 clear all
-
+set more off
 cd "C:\Users\wb305167\OneDrive - WBG\Research"
+
+capture mkdir "charts"
+
+ssc install sepscatter
 
 use "Government Revenue Dataset-augmented", clear
 sort Country_Code year
@@ -15,17 +19,17 @@ replace `u'=. if `u' < `u'_01 & `u'!=.
 
 *Define Countries Region and neighbours
 
-local v="ZWE"
-local w="Zimbabwe"
-local x="SSA"
-local a = "ZMB"
-local a1 = "Zambia"
-local b = "ZAF"
-local b1 = "South Africa"
-local c = "MOZ"
-local c1 = "Mozambique"
-local d = "UGA"
-local d1 = "Uganda"
+local v="GUY"
+local w="Guyana"
+local x="LAC"
+local a = "JAM"
+local a1 = "Jamaica"
+local b = "PAN"
+local b1 = "Panama"
+local c = "SUR"
+local c1 = "Surinam"
+local d = "TTO"
+local d1 = "Trinidad & Tobago"
 
 
 graph bar Income_Taxes Property_Tax Value_Added_Tax Excise_Taxes Trade_Taxes Social_Contributions Other_Taxes if Country_Code=="`v'", over(year, relabel(1 "1990" 2 " " 3 " " 4 " " 5 " " 6 "1995" 7 " " 8 " " 9 " " 10 " " 11 "2000" 12 " " 13 " " 14 " " 15 " " 16 "2005" 17 " " 18 " " 19 " " 20 " " 21 "2010" 22 " " 23 " " 24 " " 25 " " 26 " " 27 "2016" 28 " ")) legend(label(1 "Income Taxes")  label(2 "Property Tax") label(3 "VAT") label(4 "Excise Taxes") label(5 "Taxes on Intl. Trade") label(6 "Social Contributions") label(7 "Other Taxes")) ytitle("% of GDP") title("`w': Tax Structure") stack

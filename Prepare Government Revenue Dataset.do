@@ -2,6 +2,8 @@ clear all
 set more off
 cd "C:\Users\wb305167\OneDrive - WBG\Research
 
+ssc install sepscatter
+
 import excel "Trade in percentage of GDP.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
 save "Trade in percentage of GDP", replace
