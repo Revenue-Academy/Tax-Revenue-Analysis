@@ -1,6 +1,6 @@
 clear all
 set more off
-cd "C:\Users\wb305167\OneDrive - WBG\Research
+*cd "C:\Users\wb305167\OneDrive - WBG\Research
 
 import excel "Trade in percentage of GDP.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
@@ -29,7 +29,7 @@ save IDA_countries, replace
 
 import excel "Agriculture Value Added percent of GDP WDI.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
-save "Agriculture Value Added percent of GDP WDI.xls", replace
+save "Agriculture Value Added percent of GDP WDI", replace
 
 import excel "Polity Dataset Democracy.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
