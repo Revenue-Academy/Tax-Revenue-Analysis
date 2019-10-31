@@ -1,6 +1,6 @@
 clear all
 set more off
-*cd "C:\Users\wb305167\OneDrive - WBG\Research
+cd "C:\Users\wb305167\OneDrive - WBG\Research
 
 import excel "Trade in percentage of GDP.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
@@ -10,13 +10,13 @@ import excel "GDP Constant 2010 USD.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
 save "GDP Constant 2010 USD", replace
 
-import excel "GDP Constant 2010 USD.xls", sheet("Sheet1") firstrow clear
-sort Country_Code year
-save "GDP Constant 2010 USD", replace
-
 import excel "GDP Per Capita Constant USD.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
 save "GDP Per Capita Constant USD", replace
+
+import excel "GDP Current LCU.xls", sheet("Sheet1") firstrow clear
+sort Country_Code year
+save "GDP Current LCU", replace
 
 import excel country_code_updated.xls, sheet("country_code") firstrow clear
 rename Country countryname
@@ -27,9 +27,9 @@ import excel CPIA.xls, sheet("Sheet1") firstrow clear
 sort Country_Code
 save IDA_countries, replace
 
-import excel "Agriculture value added WDI Oct 2017 - percent of GDP.xls", sheet("Sheet1") firstrow clear
+import excel "Agriculture Value Added percent of GDP WDI.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
-save "Agriculture value added WDI Oct 2017 - percent of GDP", replace
+save "Agriculture Value Added percent of GDP WDI.xls", replace
 
 import excel "Polity Dataset Democracy.xls", sheet("Sheet1") firstrow clear
 sort Country_Code year
@@ -53,7 +53,8 @@ drop _merge
 sort Country_Code
 save country_code, replace
 
-import excel "Government Revenue Dataset - Downloaded Jan-2019 - updated 22-Jan", sheet("work") firstrow clear
+import excel "Government Revenue Dataset - Sept 2019 Update", sheet("work") firstrow clear
+*import excel "Government Revenue Dataset - Downloaded Jan-2019 - updated 22-Jan", sheet("work") firstrow clear
 *import excel "Government Revenue Dataset ICTDWIDER-GRD_2018.xlsx", sheet("work") firstrow clear
 destring Year, replace
 
@@ -69,7 +70,7 @@ foreach v of varlist Total_Revenue_incl_SC Tax_Revenue_incl_SC Tax_Revenue Total
 	format `v' %2.1f
 	}
 
-keep Identifier Country Reg Inc year Country_Code GDP_LCU Total_Revenue_incl_SC Tax_Revenue_incl_SC Tax_Revenue Total_Non_Tax_Revenue ///
+keep Identifier Country Reg Inc year Country_Code GDP Total_Revenue_incl_SC Tax_Revenue_incl_SC Tax_Revenue Total_Non_Tax_Revenue ///
 					Direct_taxes Income_Taxes PIT CIT Indirect_Taxes Tax_on_Goods_and_Services ///
 					Value_Added_Tax Excise_Taxes Trade_Taxes Social_Contributions Property_Tax Other_Taxes Export_Taxes
 					
@@ -106,6 +107,12 @@ drop _merge
 label var GDP_Constant_USD "GDP Constant 2010 USD"
 *save "GDP Constant 2010 USD", replace
 
+*Merging GDP Current LCU if GDP LCU is not included
+merge 1:m Country_Code year using "GDP Current LCU"
+drop if _merge !=3
+drop _merge
+label var GDP_LCU "GDP Current LCU"
+
 
 *use "GDP Per Capita Constant USD - Jan 2019", clear
 *including per capita income
@@ -127,6 +134,14 @@ drop if _merge !=3
 drop _merge
 *save "Trade in percentage of GDP", replace
 
+*importing agriculture dataset see reshape data do file
+merge 1:m Country_Code year using "Agriculture Value Added percent of GDP WDI.xls"
+drop if _merge !=3
+drop _merge
+
+merge 1:m Country_Code year using "Polity Dataset Democracy"
+drop if _merge !=3
+drop _merge
 
 *Resource Rich dummy
 gen res_dum=.
