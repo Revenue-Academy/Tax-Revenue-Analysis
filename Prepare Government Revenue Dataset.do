@@ -135,7 +135,7 @@ drop _merge
 *save "Trade in percentage of GDP", replace
 
 *importing agriculture dataset see reshape data do file
-merge 1:m Country_Code year using "Agriculture Value Added percent of GDP WDI.xls"
+merge 1:m Country_Code year using "Agriculture Value Added percent of GDP WDI"
 drop if _merge !=3
 drop _merge
 
