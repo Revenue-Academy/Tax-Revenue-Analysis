@@ -53,6 +53,12 @@ drop _merge
 sort Country_Code
 save country_code, replace
 
+import excel "Country Data Update Nov 2019", sheet("Sheet1") firstrow clear
+gen Identifier = trim(Country_Code) + string(year)
+sort Identifier
+save "Country Data Update Nov 2019", replace
+
+
 import excel "Government Revenue Dataset - Sept 2019 Update", sheet("work") firstrow clear
 *import excel "Government Revenue Dataset - Downloaded Jan-2019 - updated 22-Jan", sheet("work") firstrow clear
 *import excel "Government Revenue Dataset ICTDWIDER-GRD_2018.xlsx", sheet("work") firstrow clear
@@ -61,6 +67,18 @@ destring Year, replace
 rename ISO Country_Code
 rename Year year
 rename AY Export_Taxes
+
+sort Identifier
+
+merge Identifier using "Country Data Update Nov 2019", update replace
+
+drop _merge
+*Country specific Edits
+* Pakistan
+replace Value_Added_Tax = (Tax_on_Goods_and_Services - Excise_Taxes) if Country_Code=="PAK" & Value_Added_Tax==.
+
+****
+
 
 foreach v of varlist Total_Revenue_incl_SC Tax_Revenue_incl_SC Tax_Revenue Total_Non_Tax_Revenue ///
 					Direct_taxes Income_Taxes PIT CIT Indirect_Taxes Tax_on_Goods_and_Services ///

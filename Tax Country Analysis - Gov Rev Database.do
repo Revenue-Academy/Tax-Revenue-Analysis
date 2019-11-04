@@ -33,7 +33,7 @@ local c1 = "Mozambique"
 local d = "UGA"
 local d1 = "Uganda"
 */
-
+/*
 local v="GUY"
 local w="Guyana"
 local x="LAC"
@@ -45,7 +45,19 @@ local c = "SUR"
 local c1 = "Surinam"
 local d = "TTO"
 local d1 = "Trinidad & Tobago"
+*/
 
+local v="PAK"
+local w="Pakistan"
+local x="SA"
+local a = "IND"
+local a1 = "India"
+local b = "BGD"
+local b1 = "Bangladesh"
+local c = "LKA"
+local c1 = "Sri Lanka"
+local d = "NPL"
+local d1 = "Nepal"
 
 graph bar Income_Taxes Property_Tax Value_Added_Tax Excise_Taxes Trade_Taxes Social_Contributions Other_Taxes if Country_Code=="`v'", over(year, relabel(1 "1990" 2 " " 3 " " 4 " " 5 " " 6 "1995" 7 " " 8 " " 9 " " 10 " " 11 "2000" 12 " " 13 " " 14 " " 15 " " 16 "2005" 17 " " 18 " " 19 " " 20 " " 21 "2010" 22 " " 23 " " 24 " " 25 "2014" 26 " " 27 " " 28 "2017")) legend(label(1 "Income Taxes")  label(2 "Property Tax") label(3 "VAT") label(4 "Excise Taxes") label(5 "Taxes on Intl. Trade") label(6 "Social Contributions") label(7 "Other Taxes")) ytitle("% of GDP") title("`w': Tax Structure") stack
 graph export "charts/`w' Tax Structure over Time.png", replace
