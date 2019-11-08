@@ -70,6 +70,10 @@ rename AY Export_Taxes
 
 sort Identifier
 
+//syncing iso codes to WBG standard
+replace Country_Code="XKX" if Country_Code=="KSV"
+replace Country_Code="PSE" if Country_Code=="WBG"
+
 merge Identifier using "Country Data Update Nov 2019", update replace
 
 drop _merge
@@ -94,7 +98,7 @@ keep Identifier Country Reg Inc year Country_Code GDP Total_Revenue_incl_SC Tax_
 					
 sort Country_Code
 merge Country_Code using country_code
-drop if _merge!=3
+drop if _merge==2
 drop _merge
 save "Government Revenue Dataset Latest", replace
 
@@ -120,14 +124,14 @@ replace Total_Revenue_Underperformer = 0 if mean_Total_Tax_Revenue_05_15>=15
 *use "GDP Constant USD - Jan 2019", clear
 *including per capita income
 merge 1:m Country_Code year using "GDP Constant 2010 USD"
-drop if _merge !=3
+drop if _merge==2
 drop _merge
 label var GDP_Constant_USD "GDP Constant 2010 USD"
 *save "GDP Constant 2010 USD", replace
 
 *Merging GDP Current LCU if GDP LCU is not included
 merge 1:m Country_Code year using "GDP Current LCU"
-drop if _merge !=3
+drop if _merge==2
 drop _merge
 label var GDP_LCU "GDP Current LCU"
 
@@ -135,7 +139,7 @@ label var GDP_LCU "GDP Current LCU"
 *use "GDP Per Capita Constant USD - Jan 2019", clear
 *including per capita income
 merge 1:m Country_Code year using "GDP Per Capita Constant USD"
-drop if _merge !=3
+drop if _merge==2
 drop _merge
 rename GDP_Per_Capita_Constant_USD GDP_PC
 label var GDP_PC "GDP Per Capita Constant 2010 USD"
@@ -148,17 +152,17 @@ label var ln_GDP_PC2 "Log of GDP Per Capita Squared"
 *use "Trade in percentage of GDP- Nov 2018", clear
 *including trade
 merge 1:m Country_Code year using "Trade in percentage of GDP"
-drop if _merge !=3
+drop if _merge==2
 drop _merge
 *save "Trade in percentage of GDP", replace
 
 *importing agriculture dataset see reshape data do file
 merge 1:m Country_Code year using "Agriculture Value Added percent of GDP WDI"
-drop if _merge !=3
+drop if _merge==2
 drop _merge
 
 merge 1:m Country_Code year using "Polity Dataset Democracy"
-drop if _merge !=3
+drop if _merge==2
 drop _merge
 
 *Resource Rich dummy
