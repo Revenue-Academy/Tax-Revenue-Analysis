@@ -548,5 +548,5 @@ graph export "charts/`w' Tax Gap.png", replace
 
 list Country_Code year Tax_Capacity Tax_Revenue_incl_SC Tax_Gap if Country_Code=="`v'"
 
-*save "Government Revenue Dataset - augmented_full", replace
+save "Government Revenue Dataset - augmented_full", replace
 
