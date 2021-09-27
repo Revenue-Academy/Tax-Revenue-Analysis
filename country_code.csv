@@ -1,0 +1,217 @@
+Country_Code,country_number,Resource_Rich,Oil_Gas_Rich,Region_Code,Region_Desc,IDA,Country,Income_Group,Country_Code2,Small_States,IDA_IBRD
+AFG,1,NO,NO,SA,South Asia,YES,Afghanistan,Low_Income,AF,NO,IDA
+ALB,2,NO,NO,ECA,Eastern Europe & Central Asia,NO,Albania,Upper_Middle_Income,AL,NO,IBRD
+DZA,2,YES,YES,MENA,Middle East & North Africa,NO,Algeria,Upper_Middle_Income,DZ,NO,IBRD
+ASM,3,NO,NO,EAP,East Asia & Pacific,NO,American Samoa,Upper_Middle_Income,AS,NO,NONE
+ADO,3,NO,NO,WER,Western Europe,NO,Andorra,High_Income,AD,NO,NONE
+AGO,4,YES,YES,SSA,Sub-Saharan Africa,YES,Angola,Upper_Middle_Income,AO,NO,IBRD
+AIA,,NO,NO,LAC,Latin America & the Caribbean,NO,Anguilla,High_Income,,YES,NONE
+ATG,4,NO,NO,LAC,Latin America & the Caribbean,NO,Antigua and Barbuda,High_Income,AG,YES,IBRD
+ARG,5,YES,YES,LAC,Latin America & the Caribbean,NO,Argentina,Upper_Middle_Income,AR,NO,IBRD
+ARM,5,NO,NO,ECA,Eastern Europe & Central Asia,YES,Armenia,Lower_Middle_Income,AM,NO,IBRD
+ABW,6,NO,NO,LAC,Latin America & the Caribbean,NO,Aruba,High_Income,AW,NO,NONE
+AUS,6,YES,NO,EAP,East Asia & Pacific,NO,Australia,High_Income,AU,NO,NONE
+AUT,7,NO,NO,WER,Western Europe,NO,Austria,High_Income,AT,NO,NONE
+AZE,7,YES,YES,ECA,Eastern Europe & Central Asia,NO,Azerbaijan,Upper_Middle_Income,AZ,NO,IBRD
+BHS,8,NO,NO,LAC,Latin America & the Caribbean,NO,"Bahamas, The",High_Income,BS,YES,NONE
+BHR,8,YES,YES,MENA,Middle East & North Africa,NO,Bahrain,High_Income,BH,YES,NONE
+BGD,9,NO,NO,SA,South Asia,YES,Bangladesh,Lower_Middle_Income,BD,NO,IDA
+BRB,9,NO,NO,LAC,Latin America & the Caribbean,NO,Barbados,High_Income,BB,YES,NONE
+BLR,10,NO,NO,ECA,Eastern Europe & Central Asia,NO,Belarus,Upper_Middle_Income,BY,NO,IBRD
+BEL,10,NO,NO,WER,Western Europe,NO,Belgium,High_Income,BE,NO,NONE
+BLZ,11,NO,NO,LAC,Latin America & the Caribbean,NO,Belize,Upper_Middle_Income,BZ,YES,IBRD
+BEN,11,NO,NO,SSA,Sub-Saharan Africa,YES,Benin,Low_Income,BJ,NO,IDA
+BMU,12,NO,NO,LAC,Latin America & the Caribbean,NO,Bermuda,High_Income,BM,NO,NONE
+BTN,12,NO,NO,SA,South Asia,YES,Bhutan,Lower_Middle_Income,BT,YES,IDA
+BOL,13,YES,YES,LAC,Latin America & the Caribbean,YES,Bolivia,Lower_Middle_Income,BO,NO,IBRD
+BIH,13,NO,NO,ECA,Eastern Europe & Central Asia,YES,Bosnia and Herzegovina,Upper_Middle_Income,BA,NO,IBRD
+BWA,14,YES,NO,SSA,Sub-Saharan Africa,NO,Botswana,Upper_Middle_Income,BW,YES,IBRD
+BRA,14,NO,NO,LAC,Latin America & the Caribbean,NO,Brazil,Upper_Middle_Income,BR,NO,IBRD
+BRN,15,YES,YES,EAP,East Asia & Pacific,NO,Brunei Darussalam,High_Income,BN,YES,NONE
+BGR,15,NO,NO,ECA,Eastern Europe & Central Asia,NO,Bulgaria,Upper_Middle_Income,BG,NO,IBRD
+BFA,16,NO,NO,SSA,Sub-Saharan Africa,YES,Burkina Faso,Low_Income,BF,NO,IDA
+BDI,16,NO,NO,SSA,Sub-Saharan Africa,YES,Burundi,Low_Income,BI,NO,IDA
+KHM,17,NO,NO,EAP,East Asia & Pacific,YES,Cambodia,Lower_Middle_Income,KH,NO,IDA
+CMR,17,YES,YES,SSA,Sub-Saharan Africa,YES,Cameroon,Lower_Middle_Income,CM,NO,IDA
+CAN,18,NO,NO,NAM,North America,NO,Canada,High_Income,CA,NO,NONE
+CPV,18,NO,NO,SSA,Sub-Saharan Africa,YES,Cape Verde,Lower_Middle_Income,CV,YES,IDA
+CYM,19,NO,NO,LAC,Latin America & the Caribbean,NO,Cayman Islands,High_Income,KY,NO,NONE
+CAF,19,NO,NO,SSA,Sub-Saharan Africa,YES,Central African Republic,Low_Income,CF,NO,IDA
+TCD,20,YES,YES,SSA,Sub-Saharan Africa,YES,Chad,Low_Income,TD,NO,IDA
+CHI,20,NO,NO,WER,Western Europe,NO,Channel Islands,High_Income,GB,NO,NONE
+CHL,21,YES,NO,LAC,Latin America & the Caribbean,NO,Chile,High_Income,CL,NO,IBRD
+CHN,21,NO,NO,EAP,East Asia & Pacific,NO,China,Upper_Middle_Income,CN,NO,IBRD
+COL,22,YES,YES,LAC,Latin America & the Caribbean,NO,Colombia,Upper_Middle_Income,CO,NO,IBRD
+COM,22,NO,NO,SSA,Sub-Saharan Africa,YES,Comoros,Low_Income,KM,YES,IDA
+COD,23,YES,NO,SSA,Sub-Saharan Africa,YES,"Congo, Dem. Rep.",Lower_Middle_Income,CD,NO,IDA
+COG,23,YES,YES,SSA,Sub-Saharan Africa,YES,"Congo, Rep.",Lower_Middle_Income,CG,NO,IDA
+CRI,24,NO,NO,LAC,Latin America & the Caribbean,NO,Costa Rica,Upper_Middle_Income,CR,NO,IBRD
+CIV,24,YES,YES,SSA,Sub-Saharan Africa,YES,Cote d'Ivoire,Lower_Middle_Income,CI,NO,IDA
+HRV,25,NO,NO,ECA,Eastern Europe & Central Asia,NO,Croatia,High_Income,HR,NO,IBRD
+CUB,25,NO,NO,LAC,Latin America & the Caribbean,NO,Cuba,Upper_Middle_Income,CU,NO,NONE
+CYP,26,NO,NO,ECA,Eastern Europe & Central Asia,NO,Cyprus,High_Income,CY,YES,NONE
+CZE,26,NO,NO,ECA,Eastern Europe & Central Asia,NO,Czech Republic,High_Income,CZ,NO,NONE
+DNK,27,NO,NO,WER,Western Europe,NO,Denmark,High_Income,DK,NO,NONE
+DJI,27,NO,NO,SSA,Sub-Saharan Africa,YES,Djibouti,Lower_Middle_Income,DJ,YES,IDA
+DMA,28,NO,NO,LAC,Latin America & the Caribbean,YES,Dominica,Upper_Middle_Income,DM,YES,IDA
+DOM,28,NO,NO,LAC,Latin America & the Caribbean,NO,Dominican Republic,Upper_Middle_Income,DO,NO,IBRD
+ECU,29,YES,YES,LAC,Latin America & the Caribbean,NO,Ecuador,Upper_Middle_Income,EC,NO,IBRD
+EGY,29,YES,YES,MENA,Middle East & North Africa,NO,"Egypt, Arab Rep.",Lower_Middle_Income,EG,NO,IBRD
+SLV,30,NO,NO,LAC,Latin America & the Caribbean,NO,El Salvador,Lower_Middle_Income,SV,NO,IBRD
+GNQ,30,YES,YES,SSA,Sub-Saharan Africa,NO,Equatorial Guinea,Upper_Middle_Income,GQ,YES,IBRD
+ERI,31,NO,NO,SSA,Sub-Saharan Africa,YES,Eritrea,Low_Income,ER,NO,IDA
+EST,31,NO,NO,ECA,Eastern Europe & Central Asia,NO,Estonia,High_Income,EE,YES,NONE
+SWZ,91,NO,NO,SSA,Sub-Saharan Africa,NO,Eswatini,Lower_Middle_Income,SZ,YES,IBRD
+ETH,32,NO,NO,SSA,Sub-Saharan Africa,YES,Ethiopia,Low_Income,ET,NO,IDA
+FRO,32,NO,NO,WER,Western Europe,NO,Faeroe Islands,High_Income,FO,NO,NONE
+FJI,33,NO,NO,EAP,East Asia & Pacific,NO,Fiji,Upper_Middle_Income,FJ,YES,IDA
+FIN,33,NO,NO,WER,Western Europe,NO,Finland,High_Income,FI,NO,NONE
+FRA,34,NO,NO,WER,Western Europe,NO,France,High_Income,FR,NO,NONE
+PYF,34,NO,NO,EAP,East Asia & Pacific,NO,French Polynesia,High_Income,PF,NO,NONE
+GAB,35,YES,YES,SSA,Sub-Saharan Africa,NO,Gabon,Upper_Middle_Income,GA,YES,IBRD
+GMB,35,NO,NO,SSA,Sub-Saharan Africa,YES,"Gambia, The",Low_Income,GM,YES,IDA
+GEO,36,NO,NO,ECA,Eastern Europe & Central Asia,YES,Georgia,Upper_Middle_Income,GE,NO,IBRD
+DEU,36,NO,NO,WER,Western Europe,NO,Germany,High_Income,DE,NO,NONE
+GHA,37,YES,YES,SSA,Sub-Saharan Africa,YES,Ghana,Lower_Middle_Income,GH,NO,IDA
+GRC,37,NO,NO,ECA,Eastern Europe & Central Asia,NO,Greece,High_Income,GR,NO,NONE
+GRL,38,NO,NO,WER,Western Europe,NO,Greenland,High_Income,GL,NO,NONE
+GRD,38,NO,NO,LAC,Latin America & the Caribbean,YES,Grenada,Upper_Middle_Income,GD,YES,IDA
+GUM,39,NO,NO,EAP,East Asia & Pacific,NO,Guam,High_Income,GU,NO,NONE
+GTM,39,NO,NO,LAC,Latin America & the Caribbean,NO,Guatemala,Lower_Middle_Income,GT,NO,IBRD
+GIN,40,YES,NO,SSA,Sub-Saharan Africa,YES,Guinea,Low_Income,GN,NO,IDA
+GNB,40,NO,NO,SSA,Sub-Saharan Africa,YES,Guinea-Bissau,Low_Income,GW,YES,IDA
+GUY,41,YES,NO,LAC,Latin America & the Caribbean,YES,Guyana,Upper_Middle_Income,GY,YES,IDA
+HTI,41,NO,NO,LAC,Latin America & the Caribbean,YES,Haiti,Low_Income,HT,NO,IDA
+HND,42,NO,NO,LAC,Latin America & the Caribbean,YES,Honduras,Lower_Middle_Income,HN,NO,IDA
+HKG,42,NO,NO,EAP,East Asia & Pacific,NO,"Hong Kong SAR, China",High_Income,HK,NO,NONE
+HUN,43,NO,NO,ECA,Eastern Europe & Central Asia,NO,Hungary,High_Income,HU,NO,NONE
+ISL,43,NO,NO,WER,Western Europe,NO,Iceland,High_Income,IS,YES,NONE
+IND,44,NO,NO,SA,South Asia,YES,India,Lower_Middle_Income,IN,NO,IBRD
+IDN,44,YES,YES,EAP,East Asia & Pacific,NO,Indonesia,Lower_Middle_Income,ID,NO,IBRD
+IRN,45,YES,YES,MENA,Middle East & North Africa,NO,"Iran, Islamic Rep.",Upper_Middle_Income,IR,NO,IBRD
+IRQ,45,YES,YES,MENA,Middle East & North Africa,NO,Iraq,Upper_Middle_Income,IQ,NO,IBRD
+IRL,46,NO,NO,WER,Western Europe,NO,Ireland,High_Income,IE,NO,NONE
+IMY,46,NO,NO,WER,Western Europe,NO,Isle of Man,High_Income,IM,NO,NONE
+ISR,47,NO,NO,MENA,Middle East & North Africa,NO,Israel,High_Income,IL,NO,NONE
+ITA,47,NO,NO,WER,Western Europe,NO,Italy,High_Income,IT,NO,NONE
+JAM,48,NO,NO,LAC,Latin America & the Caribbean,NO,Jamaica,Upper_Middle_Income,JM,YES,IBRD
+JPN,48,NO,NO,EAP,East Asia & Pacific,NO,Japan,High_Income,JP,NO,NONE
+JOR,49,NO,NO,MENA,Middle East & North Africa,NO,Jordan,Upper_Middle_Income,JO,NO,IBRD
+KAZ,49,YES,YES,ECA,Eastern Europe & Central Asia,NO,Kazakhstan,Upper_Middle_Income,KZ,NO,IBRD
+KEN,50,NO,NO,SSA,Sub-Saharan Africa,YES,Kenya,Lower_Middle_Income,KE,NO,IDA
+KIR,50,NO,NO,EAP,East Asia & Pacific,YES,Kiribati,Lower_Middle_Income,KI,YES,IDA
+PRK,51,NO,NO,EAP,East Asia & Pacific,NO,"Korea, Dem. Rep.",Low_Income,KP,NO,NONE
+KOR,51,NO,NO,EAP,East Asia & Pacific,NO,"Korea, Rep.",High_Income,KR,NO,NONE
+KSV,,NO,NO,ECA,Eastern Europe & Central Asia,NO,Kosovo,Lower_Middle_Income,XK,NO,
+KWT,52,YES,YES,MENA,Middle East & North Africa,NO,Kuwait,High_Income,KW,NO,NONE
+KGZ,52,NO,NO,ECA,Eastern Europe & Central Asia,YES,Kyrgyz Republic,Lower_Middle_Income,KG,NO,IDA
+LAO,53,NO,NO,EAP,East Asia & Pacific,YES,Lao PDR,Lower_Middle_Income,LA,NO,IDA
+LVA,53,NO,NO,ECA,Eastern Europe & Central Asia,NO,Latvia,High_Income,LV,NO,NONE
+LBN,54,NO,NO,MENA,Middle East & North Africa,NO,Lebanon,Upper_Middle_Income,LB,NO,IBRD
+LSO,54,NO,NO,SSA,Sub-Saharan Africa,YES,Lesotho,Lower_Middle_Income,LS,YES,IDA
+LBR,55,YES,NO,SSA,Sub-Saharan Africa,YES,Liberia,Low_Income,LR,NO,IDA
+LBY,55,YES,YES,MENA,Middle East & North Africa,NO,Libya,Upper_Middle_Income,LY,NO,IBRD
+LIE,56,NO,NO,WER,Western Europe,NO,Liechtenstein,High_Income,LI,NO,NONE
+LTU,56,NO,NO,ECA,Eastern Europe & Central Asia,NO,Lithuania,High_Income,LT,NO,NONE
+LUX,57,NO,NO,WER,Western Europe,NO,Luxembourg,High_Income,LU,NO,NONE
+MAC,57,NO,NO,EAP,East Asia & Pacific,NO,"Macao SAR, China",High_Income,MO,NO,NONE
+MDG,58,NO,NO,SSA,Sub-Saharan Africa,YES,Madagascar,Low_Income,MG,NO,IDA
+MWI,59,NO,NO,SSA,Sub-Saharan Africa,YES,Malawi,Low_Income,MW,NO,IDA
+MYS,59,YES,YES,EAP,East Asia & Pacific,NO,Malaysia,Upper_Middle_Income,MY,NO,IBRD
+MDV,60,NO,NO,SA,South Asia,YES,Maldives,Upper_Middle_Income,MV,YES,IDA
+MLI,60,YES,NO,SSA,Sub-Saharan Africa,YES,Mali,Low_Income,ML,NO,IDA
+MLT,61,NO,NO,ECA,Eastern Europe & Central Asia,NO,Malta,High_Income,MT,YES,NONE
+MHL,61,NO,NO,EAP,East Asia & Pacific,YES,Marshall Islands,Upper_Middle_Income,MH,YES,IDA
+MRT,62,YES,NO,MENA,Middle East & North Africa,YES,Mauritania,Lower_Middle_Income,MR,NO,IDA
+MUS,62,NO,NO,SSA,Sub-Saharan Africa,NO,Mauritius,Upper_Middle_Income,MU,YES,IBRD
+MYT,63,NO,NO,LAC,Latin America & the Caribbean,NO,Mayotte,,YT,NO,NONE
+MEX,63,YES,YES,LAC,Latin America & the Caribbean,NO,Mexico,Upper_Middle_Income,MX,NO,IBRD
+FSM,64,NO,NO,EAP,East Asia & Pacific,YES,"Micronesia, Fed. Sts.",Lower_Middle_Income,FM,YES,IDA
+MDA,64,NO,NO,ECA,Eastern Europe & Central Asia,YES,Moldova,Lower_Middle_Income,MD,NO,IBRD
+MCO,65,NO,NO,WER,Western Europe,NO,Monaco,High_Income,MC,NO,NONE
+MNG,65,YES,NO,EAP,East Asia & Pacific,YES,Mongolia,Lower_Middle_Income,MN,NO,IBRD
+MNE,66,NO,NO,ECA,Eastern Europe & Central Asia,NO,Montenegro,Upper_Middle_Income,ME,YES,IBRD
+MAR,66,NO,NO,MENA,Middle East & North Africa,NO,Morocco,Lower_Middle_Income,MA,NO,IBRD
+MOZ,67,NO,NO,SSA,Sub-Saharan Africa,YES,Mozambique,Low_Income,MZ,NO,IDA
+MMR,67,NO,NO,EAP,East Asia & Pacific,YES,Myanmar,Lower_Middle_Income,MM,NO,IDA
+NAM,68,NO,NO,SSA,Sub-Saharan Africa,NO,Namibia,Upper_Middle_Income,,YES,IBRD
+NRU,,NO,NO,EAP,East Asia & Pacific,NO,Nauru,High_Income,NR,YES,IBRD
+NPL,68,NO,NO,SA,South Asia,YES,Nepal,Low_Income,NP,NO,IDA
+NLD,69,NO,NO,WER,Western Europe,NO,Netherlands,High_Income,NL,NO,NONE
+ANT,69,NO,NO,LAC,Latin America & the Caribbean,NO,Netherlands Antilles,High_Income,AN,NO,NONE
+NCL,70,NO,NO,EAP,East Asia & Pacific,NO,New Caledonia,High_Income,NC,NO,NONE
+NZL,70,NO,NO,EAP,East Asia & Pacific,NO,New Zealand,High_Income,NZ,NO,NONE
+NIC,71,NO,NO,LAC,Latin America & the Caribbean,YES,Nicaragua,Lower_Middle_Income,NI,NO,IDA
+NER,71,NO,NO,SSA,Sub-Saharan Africa,YES,Niger,Low_Income,NE,NO,IDA
+NGA,72,YES,YES,SSA,Sub-Saharan Africa,YES,Nigeria,Lower_Middle_Income,NG,NO,IDA
+MKD,58,NO,NO,ECA,Eastern Europe & Central Asia,NO,North Macedonia,Upper_Middle_Income,MK,NO,IBRD
+MNP,72,NO,NO,EAP,East Asia & Pacific,NO,Northern Mariana Islands,High_Income,MP,NO,NONE
+NOR,73,YES,YES,WER,Western Europe,NO,Norway,High_Income,NO,NO,NONE
+OMN,73,YES,YES,MENA,Middle East & North Africa,NO,Oman,High_Income,OM,NO,NONE
+PAK,74,NO,NO,SA,South Asia,YES,Pakistan,Lower_Middle_Income,PK,NO,IDA
+PLW,74,NO,NO,EAP,East Asia & Pacific,NO,Palau,Upper_Middle_Income,PW,YES,IBRD
+PAN,75,NO,NO,LAC,Latin America & the Caribbean,NO,Panama,Upper_Middle_Income,PA,NO,IBRD
+PNG,75,YES,YES,EAP,East Asia & Pacific,YES,Papua New Guinea,Lower_Middle_Income,PG,NO,IDA
+PRY,76,NO,NO,LAC,Latin America & the Caribbean,NO,Paraguay,Upper_Middle_Income,PY,NO,IBRD
+PER,76,YES,NO,LAC,Latin America & the Caribbean,NO,Peru,Upper_Middle_Income,PE,NO,IBRD
+PHL,77,NO,NO,EAP,East Asia & Pacific,NO,Philippines,Lower_Middle_Income,PH,NO,IBRD
+POL,77,NO,NO,ECA,Eastern Europe & Central Asia,NO,Poland,High_Income,PL,NO,IBRD
+PRT,78,NO,NO,WER,Western Europe,NO,Portugal,High_Income,PT,NO,NONE
+PRI,78,NO,NO,LAC,Latin America & the Caribbean,NO,Puerto Rico,High_Income,PR,NO,NONE
+QAT,79,YES,YES,MENA,Middle East & North Africa,NO,Qatar,High_Income,QA,YES,NONE
+ROU,79,NO,NO,ECA,Eastern Europe & Central Asia,NO,Romania,Upper_Middle_Income,RO,NO,IBRD
+RUS,80,YES,YES,ECA,Eastern Europe & Central Asia,NO,Russian Federation,Upper_Middle_Income,RU,NO,IBRD
+RWA,80,NO,NO,SSA,Sub-Saharan Africa,YES,Rwanda,Low_Income,RW,NO,IDA
+WSM,81,NO,NO,EAP,East Asia & Pacific,YES,Samoa,Lower_Middle_Income,WS,YES,IDA
+SMR,81,NO,NO,WER,Western Europe,NO,San Marino,High_Income,SM,YES,NONE
+STP,82,NO,NO,SSA,Sub-Saharan Africa,YES,Sao Tome and Principe,Lower_Middle_Income,ST,YES,IDA
+SAU,82,YES,YES,MENA,Middle East & North Africa,NO,Saudi Arabia,High_Income,SA,NO,NONE
+SEN,83,YES,NO,SSA,Sub-Saharan Africa,YES,Senegal,Low_Income,SN,NO,IDA
+SRB,83,NO,NO,ECA,Eastern Europe & Central Asia,NO,Serbia,Upper_Middle_Income,RS,NO,IBRD
+SYC,84,NO,NO,SSA,Sub-Saharan Africa,NO,Seychelles,High_Income,SC,YES,IBRD
+SLE,84,YES,NO,SSA,Sub-Saharan Africa,YES,Sierra Leone,Low_Income,SL,NO,IDA
+SGP,85,NO,NO,EAP,East Asia & Pacific,NO,Singapore,High_Income,SG,NO,NONE
+SVK,85,NO,NO,ECA,Eastern Europe & Central Asia,NO,Slovak Republic,High_Income,SK,NO,NONE
+SVN,86,NO,NO,ECA,Eastern Europe & Central Asia,NO,Slovenia,High_Income,SI,NO,NONE
+SLB,86,NO,NO,EAP,East Asia & Pacific,YES,Solomon Islands,Lower_Middle_Income,SB,YES,IDA
+SOM,87,NO,NO,SSA,Sub-Saharan Africa,YES,Somalia,Low_Income,SO,NO,IDA
+ZAF,87,YES,NO,SSA,Sub-Saharan Africa,NO,South Africa,Upper_Middle_Income,ZA,NO,IBRD
+SSD,,YES,YES,SSA,Sub-Saharan Africa,YES,South Sudan,Low_Income,SS,NO,IDA
+ESP,88,NO,NO,WER,Western Europe,NO,Spain,High_Income,ES,NO,NONE
+LKA,88,NO,NO,SA,South Asia,YES,Sri Lanka,Lower_Middle_Income,LK,NO,IBRD
+KNA,89,NO,NO,LAC,Latin America & the Caribbean,NO,St. Kitts and Nevis,High_Income,KN,YES,IBRD
+LCA,89,NO,NO,LAC,Latin America & the Caribbean,YES,St. Lucia,Upper_Middle_Income,LC,YES,IDA
+VCT,90,NO,NO,LAC,Latin America & the Caribbean,YES,St. Vincent and the Grenadines,Upper_Middle_Income,VC,YES,IDA
+SDN,90,YES,YES,SSA,Sub-Saharan Africa,YES,Sudan,Lower_Middle_Income,SD,NO,IDA
+SUR,91,YES,NO,LAC,Latin America & the Caribbean,NO,Suriname,Upper_Middle_Income,SR,YES,IBRD
+SWE,92,NO,NO,WER,Western Europe,NO,Sweden,High_Income,SE,NO,NONE
+CHE,92,NO,NO,WER,Western Europe,NO,Switzerland,High_Income,CH,NO,NONE
+SYR,93,YES,YES,MENA,Middle East & North Africa,NO,Syrian Arab Republic,Lower_Middle_Income,SY,NO,IDA
+TWN,,NO,NO,EAP,East Asia & Pacific,NO,"Taiwan, China",High_Income,TW,NO,NONE
+TJK,93,NO,NO,ECA,Eastern Europe & Central Asia,YES,Tajikistan,Lower_Middle_Income,TJ,NO,IDA
+TZA,94,NO,NO,SSA,Sub-Saharan Africa,YES,Tanzania,Low_Income,TZ,NO,IDA
+THA,94,NO,NO,EAP,East Asia & Pacific,NO,Thailand,Upper_Middle_Income,TH,NO,IBRD
+TLS,95,YES,YES,EAP,East Asia & Pacific,NO,Timor-Leste,Lower_Middle_Income,TL,YES,IDA
+TGO,95,NO,NO,SSA,Sub-Saharan Africa,YES,Togo,Low_Income,TG,NO,IDA
+TON,96,NO,NO,EAP,East Asia & Pacific,YES,Tonga,Lower_Middle_Income,TO,YES,IDA
+TTO,96,YES,YES,LAC,Latin America & the Caribbean,NO,Trinidad and Tobago,High_Income,TT,YES,IBRD
+TUN,97,NO,NO,MENA,Middle East & North Africa,NO,Tunisia,Lower_Middle_Income,TN,NO,IBRD
+TUR,97,NO,NO,MENA,Middle East & North Africa,NO,Turkey,Upper_Middle_Income,TR,NO,IBRD
+TKM,98,YES,YES,ECA,Eastern Europe & Central Asia,NO,Turkmenistan,Lower_Middle_Income,TM,NO,IBRD
+TUV,,NO,NO,EAP,East Asia & Pacific,YES,Tuvalu,Upper_Middle_Income,TV,YES,IDA
+UGA,98,NO,NO,SSA,Sub-Saharan Africa,YES,Uganda,Low_Income,UG,NO,IDA
+UKR,99,NO,NO,ECA,Eastern Europe & Central Asia,NO,Ukraine,Lower_Middle_Income,UA,NO,IBRD
+ARE,99,YES,YES,MENA,Middle East & North Africa,NO,United Arab Emirates,High_Income,AE,NO,NONE
+GBR,100,NO,NO,WER,Western Europe,NO,United Kingdom,High_Income,GB,NO,NONE
+USA,100,NO,NO,NAM,North America,NO,United States,High_Income,US,NO,NONE
+URY,101,NO,NO,LAC,Latin America & the Caribbean,NO,Uruguay,High_Income,UY,NO,IBRD
+UZB,101,NO,NO,ECA,Eastern Europe & Central Asia,YES,Uzbekistan,Lower_Middle_Income,UZ,NO,IDA
+VUT,102,NO,NO,EAP,East Asia & Pacific,YES,Vanuatu,Lower_Middle_Income,VU,YES,IDA
+VEN,102,YES,YES,LAC,Latin America & the Caribbean,NO,"Venezuela, RB",Upper_Middle_Income,VE,NO,IBRD
+VNM,103,YES,YES,EAP,East Asia & Pacific,YES,Vietnam,Lower_Middle_Income,VN,NO,IBRD
+VIR,103,NO,NO,LAC,Latin America & the Caribbean,NO,Virgin Islands (U.S.),High_Income,VI,NO,NONE
+WBG,104,NO,NO,MENA,Middle East & North Africa,NO,West Bank and Gaza,Lower_Middle_Income,PS,NO,NONE
+YEM,104,YES,YES,MENA,Middle East & North Africa,YES,"Yemen, Rep.",Lower_Middle_Income,YE,NO,IDA
+ZMB,105,YES,NO,SSA,Sub-Saharan Africa,YES,Zambia,Lower_Middle_Income,ZM,NO,IDA
+ZWE,105,NO,NO,SSA,Sub-Saharan Africa,YES,Zimbabwe,Low_Income,ZW,NO,IDA
+MSR,,NO,NO,LAC,Latin America & the Caribbean,NO,Montserrat,High_Income,MS,YES,
